@@ -3,5 +3,5 @@ CS study materials for returning to school, job interviews, and knocking off the
 
 ## Contents
 
-* **[Algorithm Questions](algorithms)**
-  * [Arrays](algorithms/arrays)
+* **[Algorithms](algorithms)**
+  * [Arrays](algorithms/arrays.md)
