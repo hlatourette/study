@@ -1,0 +1,18 @@
+# Overview of algorithms, timing/complexity analysis (Big-O Notation)
+
+Where possible timing analysis will be given in Big-Theta notation
+
+
+Basic maths
+https://www.rapidtables.com/math/number/exponent.html
+http://mathsfirst.massey.ac.nz/Algebra/Logarithms/RuleLog.htm 
+
+
+Big oh
+https://medium.com/@.RT/total-n00bs-guide-to-big-o-big-%CF%89-big-%CE%B8-aa259ae8a1c2
+https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/
+https://cs.stackexchange.com/questions/23068/how-do-o-and-%CE%A9-relate-to-worst-and-best-case
+
+https://stackoverflow.com/questions/3255/big-o-how-do-you-calculate-approximate-it
+
+http://www.cs.wustl.edu/~sg/CS241_FL99/hw1-practice.html
