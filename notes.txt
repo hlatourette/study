@@ -1,18 +1,68 @@
-# Overview of algorithms, timing/complexity analysis (Big-O Notation)
+TODO: remove sections as they are completed
 
-Where possible timing analysis will be given in Big-Theta notation
+https://github.com/yangshun/tech-interview-handbook
+
+Fundamentals
+    Basic math
+        https://www.rapidtables.com/math/number/exponent.html
+        https://www.rapidtables.com/math/algebra/logarithm/Logarithm_Rules.html
+            https://www.rapidtables.com/math/algebra/Ln.html
+        notes on log, pow, sqrt relationship
+
+    Binary (bits and bytes)
+
+    Probabilities (Bayes, etc)
+
+    Stats (variance, std. dev, regression, etc.)
+        http://www.mathsisfun.com/data/standard-deviation.html#WhySquare
+
+    Combinations/Permutations
+        https://betterexplained.com/articles/easy-permutations-and-combinations/
+        http://mathforum.org/library/drmath/view/57128.html
+        http://myhome.sunyocc.edu/~matthewg/251S/Rosen%204pt3.pdf
+
+    Geometric
+        http://www.helixsoft.nl/articles/circle/sincos.htm
+
+    Calc/Diffeq
+        see chapter in nn book
+
+Algorithms
+    Roughly follow this: 
+        https://www.cdn.geeksforgeeks.org/fundamentals-of-algorithms/
+
+    Analysis of Algorithms
+        Info:
+            https://medium.com/@.RT/total-n00bs-guide-to-big-o-big-%CF%89-big-%CE%B8-aa259ae8a1c2
+            https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation
+        Practice:
+            http://www.cs.wustl.edu/~sg/CS241_FL99/hw1-practice.html
+            http://www.csd.uwo.ca/~moreno/CS433-CS9624/Resources/master.pdf
+            https://stackoverflow.com/questions/3255/big-o-how-do-you-calculate-approximate-it
 
 
-Basic maths
-https://www.rapidtables.com/math/number/exponent.html
-http://mathsfirst.massey.ac.nz/Algebra/Logarithms/RuleLog.htm 
+    Searching and Sorting
 
+    Greedy Algorithms
 
-Big oh
-https://medium.com/@.RT/total-n00bs-guide-to-big-o-big-%CF%89-big-%CE%B8-aa259ae8a1c2
-https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/
-https://cs.stackexchange.com/questions/23068/how-do-o-and-%CE%A9-relate-to-worst-and-best-case
+    Synamic Programming
 
-https://stackoverflow.com/questions/3255/big-o-how-do-you-calculate-approximate-it
+    Pattern Searching
+    
+    Backtracking
 
-http://www.cs.wustl.edu/~sg/CS241_FL99/hw1-practice.html
+    Divide and Conquer
+
+    Geometric Algorithms
+    
+    Mathematical Algorithms
+    
+    Bit Algorithms
+        https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary:-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
+
+    Graph Algorithms
+
+    Machine Learning
+
+Data Structures
+    https://github.com/yangshun/lago
