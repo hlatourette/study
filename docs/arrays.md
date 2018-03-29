@@ -46,7 +46,7 @@ def two_sum(nums, target):
 
 ###### Time complexity
 
-&Theta;(n)
+&Theta;(_n_)
 
 ```python
 def two_sum(nums, target):
@@ -61,13 +61,13 @@ def two_sum(nums, target):
     return sums                         # 1
 ```
 
-1. f(n) = 1 + n(1 + 1) + 1
+1. f(_n_) = 1 + _n_(1 + 1) + 1
 
-2. f(n) = 2n + 2
+2. f(_n_) = 2 _n_ + 2
 
-3. f(n) = n + n<sup>0</sup>
+3. f(_n_) = n + _n_<sup>0</sup>
 
-4. f(n) = &Theta;(n)
+4. f(_n_) = &Theta;(_n_)
 
 ---
 
@@ -102,7 +102,7 @@ def max_return(prices):
 
 ###### Time complexity
 
-&Theta;(n)
+&Theta;(_n_)
 
 ```python
 def max_return(prices):
@@ -116,13 +116,13 @@ def max_return(prices):
     return max_return                        # 1
 ```
 
-1. f(n) = 1 + 1 + (n- 1)(1 + 1 + 1) + 1
+1. f(_n_) = 1 + 1 + (_n_- 1)(1 + 1 + 1) + 1
 
-2. f(n) = 3n 
+2. f(_n_) = 3 _n_ 
 
-3. f(n) = n + 0(n<sup>0</sup>)
+3. f(_n_) = _n_ + 0(_n_<sup>0</sup>)
 
-4. f(n) = &Theta;(n)
+4. f(_n_) = &Theta;(_n_)
 
 ---
 
@@ -154,7 +154,7 @@ def contains_duplicate(nums):
 
 ###### Time complexity
 
-f(n) = &Theta;(n)
+&Theta;(_n_)
 
 ```python
 def contains_duplicate(nums):
@@ -167,13 +167,13 @@ def contains_duplicate(nums):
     return False             # 1
 ```
 
-1. f(n) = 1 + (n)(1 + 1) + 1
+1. f(_n_) = 1 + (_n_)(1 + 1) + 1
 
-2. f(n) = 2n + 2 
+2. f(_n_) = 2 _n_ + 2 
 
-3. f(n) = n + (n<sup>0</sup>)
+3. f(_n_) = _n_ + (_n_<sup>0</sup>)
 
-4. f(n) = &Theta;(n)
+4. f(_n_) = &Theta;(_n_)
 
 ---
 
@@ -212,7 +212,7 @@ def product_except_self(nums):
 
 ###### Time complexity
 
-f(n) = &Theta;(n)
+&Theta;(_n_)
 
 ```python
 def product_except_self(nums):
@@ -230,13 +230,13 @@ def product_except_self(nums):
     return output                          # 1
 ```
 
-1. f(n) = 1 + 1 + (n)(1 + 1) + 1 + (n - 1)(1 + 1) + 1
+1. f(_n_) = 1 + 1 + (_n_)(1 + 1) + 1 + (_n_ - 1)(1 + 1) + 1
 
-2. f(n) = 4n + 2 
+2. f(_n_) = 4 _n_ + 2 
 
-3. f(n) = n + (n<sup>0</sup>)
+3. f(_n_) = _n_ + (_n_<sup>0</sup>)
 
-4. f(n) = &Theta;(n)
+4. f(_n_) = &Theta;(_n_)
 
 ---
 
@@ -266,7 +266,7 @@ def max_subarray_sum(nums):
 
 ###### Time complexity
 
-f(n) = &Theta;(n)
+&Theta;(_n_)
 
 ```python
 def max_subarray_sum(nums):
@@ -278,13 +278,13 @@ def max_subarray_sum(nums):
     return max_sum                                # 1
 ```
 
-1. f(n) = 1 + (n - 1)(1 + 1) + 1
+1. f(_n_) = 1 + (_n_ - 1)(1 + 1) + 1
 
-2. f(n) = 2n
+2. f(_n_) = 2 _n_
 
-3. f(n) = n + (n<sup>0</sup>)
+3. f(_n_) = _n_ + (_n_<sup>0</sup>)
 
-4. f(n) = &Theta;(n)
+4. f(_n_) = &Theta;(_n_)
 
 
 ---
@@ -319,7 +319,7 @@ def max_product_subarray(nums):
 
 ###### Time complexity
 
-f(n) = &Theta;(n)
+&Theta;(_n_)
 
 ```python
 def max_product_subarray(nums):
@@ -335,13 +335,13 @@ def max_product_subarray(nums):
     return max_product                                    # 1
 ```
 
-1. f(n) = 1 + (n - 1)(1 + 1 + 1 + 1 + 1) + 1
+1. f(_n_) = 1 + (_n_ - 1)(1 + 1 + 1 + 1 + 1) + 1
 
-2. f(n) = 5n - 3
+2. f(_n_) = 5 _n_ - 3
 
-3. f(n) = n + (n<sup>0</sup>)
+3. f(_n_) = _n_ + (_n_<sup>0</sup>)
 
-4. f(n) = &Theta;(n)
+4. f(_n_) = &Theta;(_n_)
 
 ---
 
@@ -385,7 +385,7 @@ def minimum_rotated_sorted(nums):
 
 ###### Time Complexity
 
-f(n) = &Theta;(log<sub>n</sub>)
+&Theta;(log _n_)
 
 ```python
 def minimum_rotated_sorted(nums):
@@ -404,13 +404,13 @@ def minimum_rotated_sorted(nums):
     return start                     # 1
 ```
 
-1. Master Method: T(n) = a * T(n / b) + f(n)
+1. T(_n_) = T(_n_/2) + 3
 
-2. a = 1, b = 2,  f(n) = &Theta;(n<sup>c</sup>) = &Theta;(1) where c = 0  
+2. _a_ = 1, _b_ = 2, _c_<sub>crit</sub> = 0, &fnof;(_n_) = O(1)
 
-3. Case II: c = log<sub>b</sub>a = 0 = log<sub>2</sub>1
+3. &fnof;(_n_) = &Theta;(_n_<sup>_c_<sub>crit</sub></sup> log<sup>_k_</sup>_n_) = &Theta;(1) where _k_ = 0
 
-4. f(n) = &Theta;(log<sub>n</sub>)
+4. T(n) = &Theta;(_n_<sup>_c_<sub>crit</sub></sup> log<sup>_k_ + 1</sup>_n_) = &Theta;(log(_n_))
 
 ---
 
@@ -460,7 +460,7 @@ def search_rotated_sorted(nums, target):
 
 ###### Time Complexity
 
-f(n) = &Theta;(log<sub>n</sub>)
+&Theta;(log _n_)
 
 ```python
 def search_rotated_sorted(nums, target):
@@ -485,13 +485,13 @@ def search_rotated_sorted(nums, target):
     return -1                                                # 1
 ```
 
-1. Master Method: T(n) = a * T(n / b) + f(n)
+1. T(_n_) = T(_n_/2) + 4
 
-2. a = 1, b = 2,  f(n) = &Theta;(n<sup>c</sup>) = &Theta;(1) where c = 0  
+2. _a_ = 1, _b_ = 2, _c_<sub>crit</sub> = 0, &fnof;(_n_) = O(1)
 
-3. Case II: c = log<sub>b</sub>a = 0 = log<sub>2</sub>1
+3. &fnof;(_n_) = &Theta;(_n_<sup>_c_<sub>crit</sub></sup> log<sup>_k_</sup>_n_) = &Theta;(1) where _k_ = 0
 
-4. f(n) = &Theta;(log<sub>n</sub>)
+4. T(n) = &Theta;(_n_<sup>_c_<sub>crit</sub></sup> log<sup>_k_ + 1</sup>_n_) = &Theta;(log(_n_))
 
 ---
 
@@ -536,7 +536,7 @@ def three_sum(nums):
 
 ### Time Complexity
 
-f(n) = &Theta;(n<sup>2</sup>)
+&Theta;(_n_<sup>2</sup>)
 
 ```python
 def three_sum(nums):
@@ -562,13 +562,13 @@ def three_sum(nums):
     return triplets                               # 1
 ```
 
-1. f(n) = 1 + n(logn) + (n - 3)(1 + 1 + (n - i)(1 + 1 + 1 + 1 + 1 + 1)) + 1
+1. f(_n_) = 1 + _n_(log _n_) + (_n_ - 3)(1 + 1 + (n - _i_)(1 + 1 + 1 + 1 + 1 + 1)) + 1
 
-2. f(n) = 6n<sup>2</sup> + n(logn) - 6in - 16n + 18i - 4
+2. f(_n_) = 6 _n_<sup>2</sup> + _n_(log _n_) - 6 _in_ - 16 _n_ + 18 _i_ - 4
 
-3. f(n) = n<sup>2</sup> + n(logn) + n<sup>1</sup> + (n<sup>0</sup>)
+3. f(_n_) = _n_<sup>2</sup> + _n_(log _n_) + _n_<sup>1</sup> + (_n_<sup>0</sup>)
 
-4. f(n) = &Theta;(n<sup>2</sup>)
+4. f(_n_) = &Theta;(_n_<sup>2</sup>)
 
 ---
 
@@ -605,7 +605,7 @@ def max_area_container(heights):
 
 ###### Time complexity
 
-f(n) = &Theta;(n)
+&Theta;(_n_)
 
 ```python
 def max_area_container(heights):
@@ -623,10 +623,10 @@ def max_area_container(heights):
     return max_area                                   # 1
 ```
 
-1. f(n) = 1 + 1 + 1 + (n)(1 + 1) + 1
+1. f(_n_) = 1 + 1 + 1 + (_n_)(1 + 1) + 1
 
-2. f(n) = 2n + 4
+2. f(_n_) = 2 _n_ + 4
 
-3. f(n) = n + (n<sup>0</sup>)
+3. f(_n_) = _n_ + (_n_<sup>0</sup>)
 
-4. f(n) = &Theta;(n)
+4. f(_n_) = &Theta;(_n_)

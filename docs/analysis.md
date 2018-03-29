@@ -50,7 +50,7 @@ The absolute lower bound on running time of an algorithm (the case that causes t
 Big O, Big &Omega;, Big &Theta;, Little o, and Little &omega; comprise the complexity notations (also known as Landau notations) we can use to describe an algorithm.
 
 <p align="center">
-  [[/assets/landau_notation_overview.png | ALT]]
+  <img src="assets/landau_notation_overview.png" alt="ALT" class="inline"/>
 </p>
 
 #### Big O
@@ -64,7 +64,7 @@ Big O, Big &Omega;, Big &Theta;, Little o, and Little &omega; comprise the compl
 Our runtime **f(n)** is **Big O** of **g(n)** if and only if there exists a constant **c** such that after some value  **n<sub>0</sub>**, **g(n)** will always be greater than **f(n)**.
 
 <p align="center">
-  [[/assets/landau_notation_big_o.png | ALT]]
+  <img src="assets/landau_notation_big_o.png" alt="ALT" class="inline"/>
 </p>
 
 #### Big &Omega;
@@ -78,7 +78,7 @@ Our runtime **f(n)** is **Big O** of **g(n)** if and only if there exists a cons
 Our runtime **f(n)** is **Big &Omega;** of **g(n)** if and only if there exists a constant **c** such that after some value  **n<sub>0</sub>**, **g(n)** will always be less than **f(n)**.
 
 <p align="center">
-  [[/assets/landau_notation_big_omega.png | ALT]]
+  <img src="assets/landau_notation_big_omega.png" alt="ALT" class="inline"/>
 </p>
 
 #### Big &Theta;
@@ -98,7 +98,7 @@ Our runtime **f(n)** is **Big &Omega;** of **g(n)** if and only if there exists 
 Our runtime **f(n)** is **Big &Theta;** of **g(n)** if and only if there exists positive constants **c1** and **c2** such that after some value **n0**, **c1 * g(n)** will always be less than **f(n)** and **c2 * g(n)** will always be greater than **f(n)**.
 
 <p align="center">
-  [[/assets/landau_notation_big_theta.png | ALT]]
+  <img src="assets/landau_notation_big_theta.png" alt="ALT" class="inline"/>
 </p>
 
 #### Little o
@@ -112,7 +112,7 @@ Our runtime **f(n)** is **Big &Theta;** of **g(n)** if and only if there exists 
 For every choice of a constant **c > 0**, you can find a constant a such that the inequality **0 &le; f(n) < c * g(n)** holds for all **n > n<sub>0</sub>**.
 
 <p align="center">
-  [[/assets/landau_notation_little_o.png | ALT]]
+  <img src="assets/landau_notation_little_o.png" alt="ALT" class="inline"/>
 </p>
 
 #### Little &omega;
@@ -126,7 +126,7 @@ For every choice of a constant **c > 0**, you can find a constant a such that th
 For every choice of a constant **c > 0**, you can find a constant a such that the inequality **g(n) < f(n)** holds for all **n > n<sub>0</sub>**.
 
 <p align="center">
-  [[/assets/landau_notation_little_omega.png | ALT]]
+  <img src="assets/landau_notation_little_omega.png" alt="ALT" class="inline"/>
 </p>
 
 ---
@@ -156,7 +156,7 @@ The following are commonly encountered functions in asymptotic notation listed f
 | Exponential   | &Theta;(_n_<sup>n</sup>) | Matrix chain multiplication via brute-force search | 
 
 <p align="center">
-  [[/assets/complexity_comparison.png | ALT]]
+  <img src="assets/complexity_comparison.png" alt="ALT" class="inline"/>
 </p>
 
 ---
