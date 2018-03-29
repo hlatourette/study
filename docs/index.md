@@ -1,7 +1,7 @@
-# study
 CS study materials for returning to school, job interviews, and knocking off the rust.
 
----
+## Contents
 
-https://hlatourette.github.io/study/
-
+* **[Algorithms](algorithms)**
+  * [Analysis](analysis)
+  * [Arrays](arrays)
