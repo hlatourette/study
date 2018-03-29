@@ -54,8 +54,6 @@ Given n non-negative integers a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub> w
 
 You may not slant the container.
 
-###### 
-
 ###### Define/Review requirements 
 
 If this question were posed in an interview they would almost certainly require a solution that had &Theta;(n) time complexity.
