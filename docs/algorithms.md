@@ -1,7 +1,5 @@
 ## Algorithms
 
-Each subjection (e.g. Arrays, Dynamic Programming, etc.) will contain more specific tips for questions of that nature. Furthermore, a selection of example questions will be given. Each example will provide a solution (in code and descriptive form) as well as timing/space complexity analysis where applicable. 
-
 * [Analysis](analysis)
 * [Arrays](arrays)
 
