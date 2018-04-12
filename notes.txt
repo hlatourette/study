@@ -1,31 +1,37 @@
-TODO: remove sections as they are completed
+TODO:
+    - remove sections as they are completed
+    - figure out how to install mathjax and update equations, etc.
 
 https://github.com/yangshun/tech-interview-handbook
 
 Fundamentals
+    Numeral Systems (binary, decimal, hex)
+
+    Useful Constants
+
     Basic math
         https://www.rapidtables.com/math/number/exponent.html
         https://www.rapidtables.com/math/algebra/logarithm/Logarithm_Rules.html
             https://www.rapidtables.com/math/algebra/Ln.html
         notes on log, pow, sqrt relationship
 
-    Binary (bits and bytes)
-
-    Probabilities (Bayes, etc)
-
-    Stats (variance, std. dev, regression, etc.)
-        http://www.mathsisfun.com/data/standard-deviation.html#WhySquare
-
     Combinations/Permutations
         https://betterexplained.com/articles/easy-permutations-and-combinations/
         http://mathforum.org/library/drmath/view/57128.html
         http://myhome.sunyocc.edu/~matthewg/251S/Rosen%204pt3.pdf
+
+    Probabilities (Bayes, etc)/Stats (variance, std. dev, regression, etc.)
+        http://www.mathsisfun.com/data/standard-deviation.html#WhySquare
+        https://www.analyticsvidhya.com/blog/2017/03/conditional-probability-bayes-theorem/
+        http://faculty.simpson.edu/lydia.sinapova/www/cmsc180/Symbols.htm
 
     Geometric
         http://www.helixsoft.nl/articles/circle/sincos.htm
 
     Calc/Diffeq
         see chapter in nn book
+
+    Linear Algebra
 
 Algorithms
     Roughly follow this: 
@@ -45,7 +51,7 @@ Algorithms
 
     Greedy Algorithms
 
-    Synamic Programming
+    Dynamic Programming
 
     Pattern Searching
     
