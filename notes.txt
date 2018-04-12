@@ -4,8 +4,9 @@ TODO:
 
 https://github.com/yangshun/tech-interview-handbook
 
-Fundamentals
+Fundamentals (https://www.tug.org/texshowcase/cheat.pdf)
     Numeral Systems (binary, decimal, hex)
+        https://www.rapidtables.com/math/number/Numeral_system.html
 
     Useful Constants
 
@@ -45,7 +46,6 @@ Algorithms
             http://www.cs.wustl.edu/~sg/CS241_FL99/hw1-practice.html
             http://www.csd.uwo.ca/~moreno/CS433-CS9624/Resources/master.pdf
             https://stackoverflow.com/questions/3255/big-o-how-do-you-calculate-approximate-it
-
 
     Searching and Sorting
 
