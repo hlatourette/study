@@ -1,9 +1,10 @@
 from utility.node import Node
+from data_structures.stacks_queues.stack import Stack
 
 
-class MinStack:
+class MinStack(Stack):
     def __init__(self):
-        self._head = None
+        super().__init__()
         self._min = None
 
     def push(self, value):
@@ -12,8 +13,7 @@ class MinStack:
         elif value <= self._min.value:
             self._min = Node(value, prev = self._min)
 
-        node = Node(value, prev = self._head)
-        self._head = node
+        super().push(value)
 
     def pop(self):
         if self.is_empty():
@@ -26,17 +26,9 @@ class MinStack:
 
         return node.value
 
-    def peek(self):
-        if self.is_empty():
-            raise Exception
-
-        return self._head.value
-
     def min(self):
         if self.is_empty():
             raise Exception
         
         return self._min.value
 
-    def is_empty(self):
-        return self._head == None
