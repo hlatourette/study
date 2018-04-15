@@ -1,5 +1,4 @@
 ## Issue
-
 <your_issue_number>
 
 ## Proposed changes

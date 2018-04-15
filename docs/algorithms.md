@@ -40,8 +40,6 @@ of being able to solve the problem not only correctly, but optimally.
 
 - Write purely functional code where possible. Although functional programming may increase your space complexity (non-mutation and allocation for new variables passed by value) it will help you avoid state-related bugs.
 
-- HashMaps and/or dictionaries are used extremely often in solutions to algorithm questions.
-
 ---
 
 ### Example:
@@ -124,6 +122,4 @@ def max_area_container(heights):
 
 2. f(n) = 2n + 4
 
-3. f(n) = n + (n<sup>0</sup>)
-
-4. f(n) = &Theta;(n)
+3. f(n) = &Theta;(n)

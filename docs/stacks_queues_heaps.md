@@ -2,6 +2,7 @@
 
 * [Stack](#stack)
 * [Queue](#queue)
+* [Heap](#heap)
 
 ### <a name="stack"></a> Stack
 
@@ -118,7 +119,7 @@ class Queue:
 
 ---
 
-### <a name="queue"></a> Queue
+### <a name="heap"></a> Heap
 
 Similar to a tree, a heap is a data structure that maintains the property that the root is always the minimum element. This property holds true for all subtrees of the parent tree. Heaps can be used as a priority queue, where the most important element is always at the top (can be removed). 
 

@@ -1,29 +1,16 @@
-# Contributing to study
+# Contributing to pyprep
 
-I'd love for you to contribute to the project and make it even better than it is
-today! Here are the guidelines:
-
-* [Code of Conduct](#coc)
-* [Questions and Problems](#question)
+* [Questions and Problems](#questions)
 * [Issues and Bugs](#issue)
 * [Feature Requests](#feature)
 * [Issue Submission Guidelines](#submit)
 * [Pull Request Submission Guidelines](#submit-pr)
 
-## <a name="coc"></a> Code of Conduct
-
-Help keep the materials open and inclusive. Please read and follow the [Code of Conduct][coc].
-
 ## <a name="requests"></a> Questions, Bugs, Features
 
-### <a name="question"></a> Got a Question or Problem?
+### <a name="questions"></a> Got a Question?
 
-Do not open issues for general support questions as I want to keep GitHub issues for bug reports
-and feature requests. You've got much better chances of getting your question answered through email
-(hlatourette@gmail.com).
-
-I will systematically close all issues that are requests for general
-support and redirect people to the section you are reading right now.
+Email me at (hlatourette@gmail.com)
 
 ### <a name="issue"></a> Found an Issue or Bug?
 

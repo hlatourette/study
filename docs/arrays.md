@@ -65,9 +65,7 @@ def two_sum(nums, target):
 
 2. f(_n_) = 2 _n_ + 2
 
-3. f(_n_) = n + _n_<sup>0</sup>
-
-4. f(_n_) = &Theta;(_n_)
+3. f(_n_) = &Theta;(_n_)
 
 ---
 
@@ -120,9 +118,7 @@ def max_return(prices):
 
 2. f(_n_) = 3 _n_ 
 
-3. f(_n_) = _n_ + 0(_n_<sup>0</sup>)
-
-4. f(_n_) = &Theta;(_n_)
+3. f(_n_) = &Theta;(_n_)
 
 ---
 
@@ -171,9 +167,7 @@ def contains_duplicate(nums):
 
 2. f(_n_) = 2 _n_ + 2 
 
-3. f(_n_) = _n_ + (_n_<sup>0</sup>)
-
-4. f(_n_) = &Theta;(_n_)
+3. f(_n_) = &Theta;(_n_)
 
 ---
 
@@ -234,9 +228,7 @@ def product_except_self(nums):
 
 2. f(_n_) = 4 _n_ + 2 
 
-3. f(_n_) = _n_ + (_n_<sup>0</sup>)
-
-4. f(_n_) = &Theta;(_n_)
+3. f(_n_) = &Theta;(_n_)
 
 ---
 
@@ -282,9 +274,7 @@ def max_subarray_sum(nums):
 
 2. f(_n_) = 2 _n_
 
-3. f(_n_) = _n_ + (_n_<sup>0</sup>)
-
-4. f(_n_) = &Theta;(_n_)
+3. f(_n_) = &Theta;(_n_)
 
 
 ---
@@ -339,9 +329,7 @@ def max_product_subarray(nums):
 
 2. f(_n_) = 5 _n_ - 3
 
-3. f(_n_) = _n_ + (_n_<sup>0</sup>)
-
-4. f(_n_) = &Theta;(_n_)
+3. f(_n_) = &Theta;(_n_)
 
 ---
 
@@ -627,6 +615,4 @@ def max_area_container(heights):
 
 2. f(_n_) = 2 _n_ + 4
 
-3. f(_n_) = _n_ + (_n_<sup>0</sup>)
-
-4. f(_n_) = &Theta;(_n_)
+3. f(_n_) = &Theta;(_n_)

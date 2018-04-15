@@ -7,4 +7,4 @@ CS study materials for returning to school, job interviews, and knocking off the
   * [Arrays](arrays)
 
 * **[Data Structures](data_structures)**
-  * [Stacks and Queues](stacks_queues_heaps)
+  * [Stacks, Queues, and Heaps](stacks_queues_heaps)

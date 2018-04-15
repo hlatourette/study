@@ -7,7 +7,7 @@
 
 ## <a name="setup"> Development Setup
 
-This document describes how to set up your development environment.
+How to set up your development environment.
 
 ### Installing Dependencies
 Before you can develop for study, you must install and configure the following dependencies on your
@@ -31,11 +31,8 @@ pip3 install -r requirements.txt
 
 ## <a name="tests"> Tests
 
-Unit test are written using the built-in unittest module
-
 ### <a name="unit-tests"></a> Running the Unit Test Suite
 
-In the 'src' directory:
 ```
 python3 -m unittest discover -v
 ```
@@ -45,10 +42,6 @@ PEP 8 Style Guide for Python (https://www.python.org/dev/peps/pep-0008/)
 
 
 ## <a name="commits"></a> Git Commit Guidelines
-
-We have very precise rules over how our git commit messages can be formatted.  This leads to **more
-readable messages** that are easy to follow when looking through the **project history**.  But also,
-we use the git commit messages to **generate the AngularJS change log**.
 
 ### Commit Message Format
 Each commit message consists of a **header**, a **body** and a **footer**.  The header has a special
@@ -89,8 +82,8 @@ Must be one of the following:
   generation
 
 ### Scope
-The scope could be anything specifying place of the commit change. For example `$location`,
-`$browser`, `$compile`, `$rootScope`, `ngHref`, `ngClick`, `ngView`, etc...
+The scope could be anything specifying place of the commit change. For example `$graph`,
+`$sort`, `$search`, `$dynamic`, etc...
 
 You can use `*` when the change affects more than a single scope.
 

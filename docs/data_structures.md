@@ -1,3 +1,3 @@
 ## Data Structures
 
-* [Stacks and Queues](stacks_queues_heaps)
+* [Stacks, Queues, and Heaps](stacks_queues_heaps)

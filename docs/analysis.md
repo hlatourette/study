@@ -29,8 +29,6 @@ There are three cases that can be considered when finding asymptotic bounds for 
 
 For example, an algorithm like Quick Sort has a worst case when the input is already sorted and a best case when the pivot always divides the array in two halves. However an algorithm like Merge Sort has the same asymptotic bound for all three cases (i.e. no best or worst cases).
 
-For the most part we will only be concerned with the worst case of an algorithm (as it is the most useful, the most common and the most likely to show up in an academic or professional setting).
-
 #### Worst Case (Most Common)
 
 The bounds on the complexity of an algorithm when given an input that causes the most number of operations to be executed for it's size.
@@ -133,15 +131,13 @@ For every choice of a constant **c > 0**, you can find a constant a such that th
 
 ### <a name="calculating"></a> Calculating Bounds
 
-With some memorization and the use of some general tricks you should be able to analyze the complexity of the majority of algorithms. 
+With some general tools you should be able to analyze the complexity of the majority of algorithms. 
 
 1. Remove constants and coefficients
 
 2. Take the dominant term
 
-3. Use the Master Method or Recurrence Tree Method (see [Solving Recurrences](#recurrences))
-
-4. Guess and use induction to prove the guess is correct or incorrect (Substitution Method | see [Solving Recurrences](#recurrences))
+3. If the algorithm involves recurrences, try O(_branches_<sup>_depth_</sup>) or use the Master Method based on the form of the algorithm (see [Solving Recurrences](#recurrences))
 
 The following are commonly encountered functions in asymptotic notation listed from slowest to fastest growing.
 
@@ -263,7 +259,7 @@ def foo(arr_a):
 
 ###### O(_n_ + _m_) 
 
-Two loops run consecutively, but with different possible sizes. If n == m, time complexity is O(_n_)
+If you have multiple parameters, and their size relationship isn't guaranteed, your function must account for this.
 
 ```python
 def foo(arr_a, arr_b):
@@ -278,7 +274,15 @@ def foo(arr_a, arr_b):
 
 ### <a name="recurrences"></a> Solving Recurrences
 
-Recurrences are another common form for asymptotic analysis, with a typical algorithm in the following form (BUT NOT ALWAYS):
+Recurrences are another common form for asymptotic analysis.
+
+#### General
+
+When you have a recursive function that makes multiple calls, the runtime will often (but not always) look like **O(_branches_<sup>_depth_</sup>)**.
+
+#### Master Method
+
+A general solution for many recurrences that are strictly of the form **T(_n_) = _a_ * T(_n_/_b_) + &fnof;(_n_)**. However, even some algorithms in this form may not be solvable through the Master Method. For example, **T(_n_) = 2T(_n_/2) + _n_/Log _n_**.
 
 ```
 procedure p( input x of size n):
@@ -294,17 +298,6 @@ procedure p( input x of size n):
 
 where **_a_** is the number of subproblems, **_b_** is the reduction factor, and **&fnof;(_n_)** is the time to create the subproblems and combine their results.
 
-#### Substitution Method
-
-_TODO_
-
-#### Recurrence Tree Method
-
-_TODO_
-
-#### Master Method
-
-A general solution for many recurrences that are strictly of the form **T(_n_) = _a_ * T(_n_/_b_) + &fnof;(_n_)**. However, even some algorithms in this form may not be solvable through the Master Method. For example, **T(_n_) = 2T(_n_/2) + _n_/Log _n_**.
 
 1. First, find the **_critical exponent_ _c_<sub>crit</sub>**
 
@@ -358,9 +351,9 @@ A general solution for many recurrences that are strictly of the form **T(_n_) =
 
 Remember that with Big O it doesn’t matter when the curves cross, so long as they do, and that after that the curve of &fnof;(_n_) is always less than or equal to the Big O curve _g_(_n_). We’re talking about scalability. We are interested in how things operate as they grow very large. If your input size will never reach **n<sub>0</sub>**, an algorithm that runs in an asymptotically slower manner could actually be a better choice. 
 
-It is not always possible to make a Big Theta statement about an algorithm. But when it is, the Big Theta algorithm is in the same asymptotic class of algorithms as our own. It describes a tight bound and represents the strongest asymptotic statement we can make.
+It is not always possible to make a Big Theta statement about an algorithm. But when it is describes a tight bound and represents the strongest asymptotic statement we can make.
 
-Remember that though constants and coefficients have little bearing on asymptotic statements, they may actually come in handy if you are concerned with how and when the functions diverge. If that’s the case, then just as larger exponents grow faster than smaller ones, so logs with lesser bases grow more quickly than those with greater ones.
+Remember that although constants and coefficients have little bearing on asymptotic statements, they may actually come in handy if you are concerned with how and when the functions diverge. If that’s the case, then just as larger exponents grow faster than smaller ones, so logs with lesser bases grow more quickly than those with greater ones.
 
 It’s helpful to remember that Big O isn’t the only consideration to be factored into the algorithm development process. It may be tempting to use Big O prematurely or prioritize it too highly in a way that will overshadow other equally important considerations such as “how easy is this code to work with and maintain?”
 
