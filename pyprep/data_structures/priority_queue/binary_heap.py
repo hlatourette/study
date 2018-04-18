@@ -1,4 +1,4 @@
-class Heap:
+class BinaryHeap:
     def __init__(self, comparator):
         self._heap = [None]
         self._comparator = comparator

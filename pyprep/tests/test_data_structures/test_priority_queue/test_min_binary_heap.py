@@ -1,10 +1,10 @@
 import unittest
 
-from data_structures.heap_priority_queue.min_heap import MinHeap
+from data_structures.priority_queue.min_binary_heap import MinBinaryHeap
 
 class TestStack(unittest.TestCase):
   def setUp(self): 
-      self.heap = MinHeap()
+      self.heap = MinBinaryHeap()
 
   def test_push(self):
       self.heap.push(0)

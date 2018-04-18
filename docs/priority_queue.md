@@ -20,7 +20,7 @@ Similar to a tree (but can easily be implemented in an array or array-list), a h
 - is_empty(): Return true if empty
 
 ```python
-class Heap:
+class BinaryHeap:
     def __init__(self, comparator):
         self._heap = [None]
         self._comparator = comparator
