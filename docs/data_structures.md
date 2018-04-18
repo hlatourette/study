@@ -1,6 +1,6 @@
 ## Data Structures
 
-* [Stacks and Queues](stacks_queues_heaps)
+* [Stacks and Queues](stack_queue)
 * [Priority Queues](priority_queue)
 
 ---
