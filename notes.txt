@@ -3,6 +3,7 @@ TODO:
     - figure out how to install mathjax and update equations, etc.
 
 https://github.com/yangshun/tech-interview-handbook
+ https://github.com/yangshun/lago
 
 Fundamentals (https://www.tug.org/texshowcase/cheat.pdf)
     Numeral Systems (binary, decimal, hex)
@@ -35,40 +36,9 @@ Fundamentals (https://www.tug.org/texshowcase/cheat.pdf)
     Linear Algebra
 
 Algorithms
-    Roughly follow this: 
-        https://www.cdn.geeksforgeeks.org/fundamentals-of-algorithms/
-
-    Analysis of Algorithms
-        Info:
-            https://medium.com/@.RT/total-n00bs-guide-to-big-o-big-%CF%89-big-%CE%B8-aa259ae8a1c2
-            https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/big-o-notation
-        Practice:
-            http://www.cs.wustl.edu/~sg/CS241_FL99/hw1-practice.html
-            http://www.csd.uwo.ca/~moreno/CS433-CS9624/Resources/master.pdf
-            https://stackoverflow.com/questions/3255/big-o-how-do-you-calculate-approximate-it
-
-    Searching and Sorting
-
-    Greedy Algorithms
-
-    Dynamic Programming
-
-    Pattern Searching
-    
-    Backtracking
-
-    Divide and Conquer
-
-    Geometric Algorithms
-    
-    Mathematical Algorithms
-    
-    Bit Algorithms
-        https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary:-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
-
-    Graph Algorithms
+    http://mimoza.marmara.edu.tr/~msakalli/cse706_12/SkienaTheAlgorithmDesignManual.pdf
 
     Machine Learning
 
 Data Structures
-    https://github.com/yangshun/lago
+   
