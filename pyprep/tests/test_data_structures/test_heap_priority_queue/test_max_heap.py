@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.stacks_queues.max_heap import MaxHeap
+from data_structures.heap_priority_queue.max_heap import MaxHeap
 
 class TestStack(unittest.TestCase):
   def setUp(self): 

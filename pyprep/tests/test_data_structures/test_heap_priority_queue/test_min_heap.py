@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.stacks_queues.min_heap import MinHeap
+from data_structures.heap_priority_queue.min_heap import MinHeap
 
 class TestStack(unittest.TestCase):
   def setUp(self): 

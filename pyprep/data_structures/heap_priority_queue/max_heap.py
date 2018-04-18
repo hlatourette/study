@@ -1,4 +1,4 @@
-from data_structures.stacks_queues.heap import Heap
+from data_structures.heap_priority_queue.heap import Heap
 
 
 class MaxHeap(Heap):
