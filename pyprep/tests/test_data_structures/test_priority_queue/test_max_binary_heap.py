@@ -1,10 +1,10 @@
 import unittest
 
-from data_structures.heap_priority_queue.max_heap import MaxHeap
+from data_structures.priority_queue.max_binary_heap import MaxBinaryHeap
 
 class TestStack(unittest.TestCase):
   def setUp(self): 
-      self.heap = MaxHeap()
+      self.heap = MaxBinaryHeap()
 
   def test_push(self):
       self.heap.push(0)
