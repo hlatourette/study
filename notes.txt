@@ -42,3 +42,6 @@ Algorithms
 
 Data Structures
    
+
+syntax: /repos/:user/:repo [GET]
+example: https://api.github.com/repos/git/git
