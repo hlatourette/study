@@ -63,7 +63,7 @@ def _merge(left, right, comp):
 
  - _Space_ = O(_n_)
 
- ### <a name="quicksort"></a> Quicksort
+### <a name="quicksort"></a> Quicksort
 
 Quicksort is an efficient unstable divide and conquer sorting algorithm (although stable implementations exist). Quicksort partitions the input array based on a pivot value, where all elements smaller than the pivot are placed before it and all elements greater than the pivot are placed after it. This partition operation can be done in-place and in linear time. It is important to note that the worst-case time complexity is O(_n_<sup>2</sup>). Although this is relatively rare, naive implementations (such as the one above) typically choose the first or last elements as pivots...meaning that already sorted input data results in worst-case runtime. One solution to this problem is to choose a random pivot point and adjust the algorithm accoridingly, as this typically yields a consistent O(_n_ log _n_) performance.
 
