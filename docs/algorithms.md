@@ -1,13 +1,15 @@
 ## Algorithms
 
 * [Analysis](analysis)
+* [Sorting](sorting)
+* [Searching](searching)
 
 ---
 
-Algorithms are procedures to complete an objective. They are a central concept of computer science. There are three components to any useful algorithm:
+Definitionally algorithms are a process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer. There are three components to any useful algorithm:
 
-1) _Problem_: Well defined 
+1) _Problem_: Well defined problem space (narrow goal)
  
-2) _Input_: Set of events or instances that it must work on
+2) _Input_: Set of events or inputs that it must be usable on
 
-3) _Output_: Set of events or instances that can be returned after work is complete
+3) _Output_: Set of events or inputs that can be returned after work is complete
