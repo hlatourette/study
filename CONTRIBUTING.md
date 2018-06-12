@@ -8,26 +8,16 @@
 
 ## <a name="requests"></a> Questions, Bugs, Features
 
-### <a name="questions"></a> Got a Question?
-
-Email me at (hlatourette@gmail.com)
-
-### <a name="issue"></a> Found an Issue or Bug?
-
-If you find a bug in the source code, you can help by submitting an issue to the
-[GitHub Repository][github].
-
-### <a name="feature"></a> Missing a Feature?
-
-You can request a new feature or section to be added by submitting an issue to the [GitHub Repository][github-issues].
+If you find a bug in the source code or would like to request a feature (i.e. cs concept to be included), you can help by submitting an issue to the [GitHub Repository][github].
 
 ## <a name="submit"></a> Issue Submission Guidelines
-Before you submit your issue search the archive. If your issue appears to be a new bug or feature, and hasn't been reported or requested, open an issue.
 
-The "[new issue][github-new-issue]" form contains a number of prompts that you should fill out to
-make it easier to understand and categorize the issue.
+Before you submit your issue search the archive to make sure it's not a duplicate. If your issue appears to be a new bug or feature open an issue.
+
+The "[new issue][github-new-issue]" form contains a number of prompts that you should fill out to make it easier to understand and categorize the issue.
 
 ## <a name="submit-pr"></a> Pull Request Submission Guidelines
+
 Before you submit your pull request consider the following guidelines:
 
 * Search [GitHub][github-pulls] for an open or closed Pull Request
@@ -47,11 +37,9 @@ Before you submit your pull request consider the following guidelines:
   * Amend your commits to your branch.
   * Push the changes to the GitHub repository (this will update your Pull Request).
 
-#### After your pull request is merged
+### After your pull request is merged
 
-After your pull request is merged, you can safely delete your branch and pull the changes
-from the main (upstream) repository.
-
+After your pull request is merged, you can safely delete your branch and pull the changes from the main (upstream) repository.
 
 [coc]: CODE_OF_CONDUCT.md
 [developers]: DEVELOPERS.md

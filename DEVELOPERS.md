@@ -10,21 +10,24 @@
 How to set up your development environment.
 
 ### Installing Dependencies
-Before you can develop for study, you must install and configure the following dependencies on your
-machine:
+
+Before you can develop for study, you must install and configure the following dependencies on your machine:
+
 * [Git](http://git-scm.com/): The [Github Guide to Installing Git][git-setup] is a good source of information.
 
 * [Python3.5](https://www.python.org/)
 
 ### Creating Environment
 
-Any development for study must be done under a virtual environment (venv) to guarantee dependency consistency.
+Any development must be done under a virtual environment (venv) to keep dependency consistency.
 
 In the root of your local repository:
+
 ```
 python3 -m venv env
 source ./env/bin/activate
 ```
+
 ``` 
 pip3 install -r requirements.txt
 ```
@@ -38,14 +41,14 @@ python3 -m unittest discover -v
 ```
 
 ## <a name="rules"></a> Coding Rules
-PEP 8 Style Guide for Python (https://www.python.org/dev/peps/pep-0008/)
 
+PEP 8 Style Guide for Python (https://www.python.org/dev/peps/pep-0008/)
 
 ## <a name="commits"></a> Git Commit Guidelines
 
 ### Commit Message Format
-Each commit message consists of a **header**, a **body** and a **footer**.  The header has a special
-format that includes a **type**, a **scope** and a **subject**:
+
+Each commit message consists of a **header**, a **body** and a **footer**.  The header has a special format that includes a **type**, a **scope** and a **subject**:
 
 ```
 <type>(<scope>): <subject>
@@ -57,17 +60,15 @@ format that includes a **type**, a **scope** and a **subject**:
 
 The **header** is mandatory and the **scope** of the header is optional.
 
-Any line of the commit message cannot be longer 100 characters! This allows the message to be easier
-to read on GitHub as well as in various git tools.
+Any line of the commit message cannot be longer 100 characters! This allows the message to be easier to read on GitHub as well as in various git tools.
 
 ### Revert
-If the commit reverts a previous commit, it should begin with `revert: `, followed by the header
-of the reverted commit.
-In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit
-being reverted.
+
+If the commit reverts a previous commit, it should begin with `revert: `, followed by the header of the reverted commit. In the body it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit being reverted.
 A commit with this format is automatically created by the [`git revert`][git-revert] command.
 
 ### Type
+
 Must be one of the following:
 
 * **feat**: A new feature
@@ -82,12 +83,14 @@ Must be one of the following:
   generation
 
 ### Scope
+
 The scope could be anything specifying place of the commit change. For example `$graph`,
 `$sort`, `$search`, `$dynamic`, etc...
 
 You can use `*` when the change affects more than a single scope.
 
 ### Subject
+
 The subject contains succinct description of the change:
 
 * use the imperative, present tense: "change" not "changed" nor "changes"
@@ -95,16 +98,17 @@ The subject contains succinct description of the change:
 * no dot (.) at the end
 
 ### Body
+
 Just as in the **subject**, use the imperative, present tense: "change" not "changed" nor "changes".
 The body should include the motivation for the change and contrast this with previous behavior.
 
 ### Footer
+
 The footer should contain any information about **Breaking Changes** and is also the place to
 [reference GitHub issues that this commit closes][closing-issues].
 
 **Breaking Changes** should start with the word `BREAKING CHANGE:` with a space or two newlines.
 The rest of the commit message is then used for this.
-
 
 [closing-issues]: https://help.github.com/articles/closing-issues-via-commit-messages/
 [git-revert]: https://git-scm.com/docs/git-revert
