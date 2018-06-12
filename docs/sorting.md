@@ -1,17 +1,13 @@
-## Sorting
+# Sorting
 
 * [Merge sort](#mergesort)
 * [Quicksort](#quicksort)
 
----
-
 Sorting algorithms take a set of inputs (typically in an array that allows random access) and places them in a certain order. A stable sort keeps identical elements in the same order that they appear in the input, whereas an unstable sort provides no such guarantee.
 
-Quality sorting algorithms are important for optimizing other algorithms that pertain to searching and merging data structures. 
+Quality sorting algorithms are important for optimizing other algorithms that pertain to searching and merging data structures.
 
----
-
-### <a name="mergesort"></a> Merge sort
+## <a name="mergesort"></a> Merge sort
 
 Merge sort is a stable sort that sorts inputs by recursively merging smaller sorted inputs. Since a single element is sorted, Merge sort begins by merging pairs of individual elements, then pairs of two, then groups of four etc. Merge sort scales well for large inputs and can be easily converted to parallel applications.
 
@@ -53,17 +49,17 @@ def _merge(left, right, comp):
     return merge
 ```
 
-###### Complexity
+### Complexity
 
- - _Best Case_ = O(_n_ log _n_)
+* _Best Case_ = O(_n_ log _n_)
 
- - _Average Case_ = O(_n_ log _n_)
+* _Average Case_ = O(_n_ log _n_)
 
- - _Worst Case_ = O(_n_ log _n_)
+* _Worst Case_ = O(_n_ log _n_)
 
- - _Space_ = O(_n_)
+* _Space_ = O(_n_)
 
-### <a name="quicksort"></a> Quicksort
+## <a name="quicksort"></a> Quicksort
 
 Quicksort is an efficient unstable divide and conquer sorting algorithm (although stable implementations exist). Quicksort partitions the input array based on a pivot value, where all elements smaller than the pivot are placed before it and all elements greater than the pivot are placed after it. This partition operation can be done in-place and in linear time. It is important to note that the worst-case time complexity is O(_n_<sup>2</sup>). Although this is relatively rare, naive implementations (such as the one above) typically choose the first or last elements as pivots...meaning that already sorted input data results in worst-case runtime. One solution to this problem is to choose a random pivot point and adjust the algorithm accoridingly, as this typically yields a consistent O(_n_ log _n_) performance.
 
@@ -89,12 +85,12 @@ def _partition(arr, start, end, comp):
     return i + 1
 ```
 
-###### Complexity
+### Complexity
 
- - _Best Case_ = O(_n_ log _n_)
+* _Best Case_ = O(_n_ log _n_)
 
- - _Average Case_ = O(_n_ log _n_)
+* _Average Case_ = O(_n_ log _n_)
 
- - _Worst Case_ = O(_n_<sup>2</sup>)
+* _Worst Case_ = O(_n_<sup>2</sup>)
 
- - _Space_ = O(_n_) (some variations are log _n_)
+* _Space_ = O(_n_) (some variations are log _n_)

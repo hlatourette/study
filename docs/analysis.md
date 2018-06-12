@@ -1,73 +1,59 @@
-## Analysis of Algorithms
+# Analysis of Algorithms
 
 * **[RAM Model](#ram)**
 * **[Asymptotic Analysis](#aysmptotic_analysis)**
-    * [Worst, Average, and Best Cases](#cases)
-    * [Asymptotic Notation](#asymptotic_notation)
-    * [Calculating Bounds](#calculating)
-    * [Analysis of Loops](#loops)
-    * [Solving Recurrences](#recurrences)
-    * [Considerations](#considerations)
-
----
+  * [Worst, Average, and Best Cases](#cases)
+  * [Asymptotic Notation](#asymptotic_notation)
+  * [Calculating Bounds](#calculating)
+  * [Considerations](#considerations)
 
 Programmers should always strive to have modular, secure, maintable, and performant code. This section covers analyzing the performance of algorithms.
 
-#### How do we decide which algorithm performs better for a given problem?
+## How do we decide which algorithm performs better for a given problem?
 
 A naive approach would be to time both algorithms. However there are many issues with this approach:
 
-- The different algorithms may perform better on some inputs than others (not generalized enough)
+* The different algorithms may perform better on some inputs than others (not generalized enough)
 
-- The speed of the machines they're run on may differ (hardware differences, etc.)
+* The speed of the machines they're run on may differ (hardware differences, etc.)
 
 Instead, there are two key tools that can help us solve this problem, the **RAM Model** and **Asymptotic Analysis**. Rather than measuring runtime, they tell us how an algorithm will scale in time or space usage (rate of growth) as the input size increases. This way we can determine relative efficiency of our target without any using any machine specific constants.
 
----
-
-### <a name="ram"></a> RAM Model
+## <a name="ram"></a> RAM Model
 
 To do machine-independent anaylsis, we first need a generalized model of a computer. This machine is called the _Random Access Machine_ (RAM for short) and is defined by the following rules:
 
-- Basic operations take one time step (+, *, -, =, if, call-subroutine)
+* Basic operations take one time step (+, *, -, =, if, call-subroutine)
 
-- Non-basic operations (loops and subroutines) can take a variable amount of time to run depending on the number iterations or the structure of the subroutines
+* Non-basic operations (loops and subroutines) can take a variable amount of time to run depending on the number iterations or the structure of the subroutines
 
-- Memory access takes one time step
+* Memory access takes one time step
 
 To measure the time a given input for an algorithm takes on this model, we simply needs to sum the nmber of steps it takes.
 
----
-
-### <a name='aysmptotic_analysis'></a> Asymptotic Analysis
+## <a name='aysmptotic_analysis'></a> Asymptotic Analysis
 
 Although the RAM model gives us the ability to count the steps for a single input of an algorithm, it doesn't provide us the ability to understand how it will work over the entire set of inputs. This is where asymptotic analysis comes in. In this methodology, we're considering all possible instances of input that could be given to our algorithm.
 
-#### <a name="cases"></a> Worst, Average, and Best Cases
+## <a name="cases"></a> Worst, Average, and Best Cases
 
 There are three cases that can be considered when finding asymptotic bounds for an algorithm (and such bounds will only apply to the case you are analyzing): **worst**, **average**, and **best**.
 
 For example, an algorithm like Quick Sort has a worst case when the input is already sorted and a best case when the pivot always divides the array in two halves. However an algorithm like Merge Sort has the same asymptotic bound for all three cases (i.e. no best or worst cases).
 
-- _Worst Case_ bounds the complexity of an algorithm when given an input that causes the most number of operations to be executed for it's size _n_.
+* _Worst Case_ bounds the complexity of an algorithm when given an input that causes the most number of operations to be executed for it's size _n_.
 
-- _Average Case_ bounds an algorithm for an average input of size _n_. This is usually the most difficult case to analyze for any given algorithm as we must have knowledge of the distribution of all possible inputs. 
+* _Average Case_ bounds an algorithm for an average input of size _n_. This is usually the most difficult case to analyze for any given algorithm as we must have knowledge of the distribution of all possible inputs. 
 
-- _Best Case_ bounds an algorithm when the given input will execute the minimum number of steps for input size _n_
+* _Best Case_ bounds an algorithm when the given input will execute the minimum number of steps for input size _n_
 
----
-
-#### <a name="asymptotic_notation"></a> Asymptotic (Big Oh) Notation
+## <a name="asymptotic_notation"></a> Asymptotic (Big Oh) Notation
 
 Another way of looking at the best, worst, and average case time complexities of an algorithm is as functions over the size of possible inputs. However, in reality these functions are often relatively complex, not smooth, and require too much detail to be precise. Thankfully, we can use asymptotic bounds on the actual function to describe its complexity at scale. 
 
 Big O, Big &Omega;, Big &Theta;, Little o, and Little &omega; comprise the complexity notations (also known as Landau notations) we can use to describe these asymptotes/complexities.
 
-<p align="center">
-  <img src="assets/landau_notation_overview.png" alt="ALT" class="inline"/>
-</p>
-
-##### Big O - Upper bound
+### Big O - Upper bound
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**f(n) &isin; O(g(n)) as n &rarr; &infin;**
 
@@ -76,10 +62,10 @@ Big O, Big &Omega;, Big &Theta;, Little o, and Little &omega; comprise the compl
 Our runtime **f(n)** is **Big O** of **g(n)** if and only if there exists a constant **c** such that after some value  **n<sub>0</sub>**, **g(n)** will always be greater than **f(n)**.
 
 <p align="center">
-  <img src="assets/landau_notation_big_o.png" alt="ALT" class="inline"/>
+  <img src="assets/big_o_notation.jpg" alt="ALT" class="inline"/>
 </p>
 
-##### Big &Omega; - Lower bound
+### Big &Omega; - Lower bound
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**f(n) &isin; &Omega;(g(n)) as n &rarr; &infin;**
 
@@ -88,16 +74,16 @@ Our runtime **f(n)** is **Big O** of **g(n)** if and only if there exists a cons
 Our runtime **f(n)** is **Big &Omega;** of **g(n)** if and only if there exists a constant **c** such that after some value  **n<sub>0</sub>**, **g(n)** will always be less than **f(n)**.
 
 <p align="center">
-  <img src="assets/landau_notation_big_omega.png" alt="ALT" class="inline"/>
+  <img src="assets/big_omega_notation.jpg" alt="ALT" class="inline"/>
 </p>
 
-##### Big &Theta; - Upper and Lower bound
+### Big &Theta; - Upper and Lower bound
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**f(n) &isin; &Theta;(g(n)) as n &rarr; &infin;**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**when f(n) &isin; O(g(n)) and f(n) &isin; &Omega;(n)**
 
-###### Formally: 
+#### Formally
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**f(n) &isin; &Theta;(g(n)) as n &rarr; &infin;**
 
@@ -106,10 +92,10 @@ Our runtime **f(n)** is **Big &Omega;** of **g(n)** if and only if there exists 
 Our runtime **f(n)** is **Big &Theta;** of **g(n)** if and only if there exists positive constants **c1** and **c2** such that after some value **n0**, **c1 * g(n)** will always be less than **f(n)** and **c2 * g(n)** will always be greater than **f(n)**.
 
 <p align="center">
-  <img src="assets/landau_notation_big_theta.png" alt="ALT" class="inline"/>
+  <img src="assets/big_theta_notation.jpg" alt="ALT" class="inline"/>
 </p>
 
-##### Little o - Upper bound that cannot be tight.
+### Little o - Upper bound that cannot be tight.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**f(n) &isin; o(g(n)) as n &rarr; &infin;**
 
@@ -117,11 +103,7 @@ Our runtime **f(n)** is **Big &Theta;** of **g(n)** if and only if there exists 
 
 For every choice of a constant **c > 0**, you can find a constant a such that the inequality **0 &le; f(n) < c * g(n)** holds for all **n > n<sub>0</sub>**.
 
-<p align="center">
-  <img src="assets/landau_notation_little_o.png" alt="ALT" class="inline"/>
-</p>
-
-##### Little &omega; - Lower bound that cannot be tight.
+### Little &omega; - Lower bound that cannot be tight.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**f(n) &isin; &omega;(g(n)) as n &rarr; &infin;**
 
@@ -129,13 +111,7 @@ For every choice of a constant **c > 0**, you can find a constant a such that th
 
 For every choice of a constant **c > 0**, you can find a constant a such that the inequality **g(n) < f(n)** holds for all **n > n<sub>0</sub>**.
 
-<p align="center">
-  <img src="assets/landau_notation_little_omega.png" alt="ALT" class="inline"/>
-</p>
-
----
-
-#### <a name="calculating"></a> Calculating Bounds
+## <a name="calculating"></a> Calculating Bounds
 
 With some general tools you should be able to analyze the complexity of the majority of algorithms. 
 
@@ -161,13 +137,11 @@ The following are commonly encountered functions in asymptotic notation listed f
   <img src="assets/complexity_comparison.png" alt="ALT" class="inline"/>
 </p>
 
----
-
-#### <a name="loops"></a> Analysis of Loops
+### Analysis of Loops
 
 One of the most common patterns encountered in algorithm analysis is the loop. 
 
-##### O(1)
+#### O(1)
 
 A loop is considered O(1) if it doesn't contain a loop, recursion, or call to any non-constant time function.
 
@@ -188,7 +162,7 @@ def foo():
     return sum
 ```
 
-##### O(_n_)
+#### O(_n_)
 
 The function iterates through the input at constant increments.
 
@@ -204,11 +178,11 @@ def foo(arr):
         print(i)
 ```
 
-##### O(_n_<sup>i</sup>)
+#### O(_n_<sup>i</sup>)
 
 Nested loops have a runtime of the outermost loop times the innermost loop.
 
-_O(_n_<sup>2</sup>)_
+##### O(_n_<sup>2</sup>)
 
 ```python
 def foo(arr):
@@ -217,7 +191,7 @@ def foo(arr):
             print(i + j)
 ```
 
-_O(_n_<sup>3/2</sup>)_
+##### O(_n_<sup>3/2</sup>)
 
 ```python
 def foo(arr):
@@ -226,7 +200,7 @@ def foo(arr):
             print(i + j)
 ```
 
-##### O(log _n_)
+#### O(log _n_)
 
 Loop increment is divided or multiplied by a constant amount.
 
@@ -237,7 +211,7 @@ def foo(arr):
         i *= 2
 ```
 
-##### O(loglog _n_)
+#### O(loglog _n_)
 
 Loop increment is reduced or increased exponentially by a constant (i.e. power or root)
 
@@ -248,9 +222,7 @@ def foo(arr):
         i = int(math.pow(i, 2))
 ```
 
-##### Consecutive Loops
-
-_O(_n_)_
+#### Consecutive Loops
 
 Two loops run consecutively (not nested) which is O(2n) which is O(_n_)
 
@@ -258,12 +230,12 @@ Two loops run consecutively (not nested) which is O(2n) which is O(_n_)
 def foo(arr_a):
     for i in range(0, len(arr)):
         print(i)
-    
+
     for i in range(0, len(arr)):
         print(i)
 ```
 
-_O(_n_ + _m_)_
+#### O(_n_ + _m_)
 
 If you have multiple parameters, and their size relationship isn't guaranteed, your function must account for this.
 
@@ -271,22 +243,16 @@ If you have multiple parameters, and their size relationship isn't guaranteed, y
 def foo(arr_a, arr_b):
     for i in range(0, len(arr_a)):
         print(i)
-    
+
     for i in range(0, len(arr_b)):
         print(i)
 ```
 
----
+### Solving Recurrences
 
-#### <a name="recurrences"></a> Solving Recurrences
+Recurrences are another common form for asymptotic analysis. When you have a recursive function that makes multiple calls, the runtime will often (but not always) look like **O(_branches_<sup>_depth_</sup>)**.
 
-Recurrences are another common form for asymptotic analysis.
-
-##### General
-
-When you have a recursive function that makes multiple calls, the runtime will often (but not always) look like **O(_branches_<sup>_depth_</sup>)**.
-
-##### Master Method
+#### Master Method
 
 A general solution for many recurrences that are strictly of the form **T(_n_) = _a_ * T(_n_/_b_) + &fnof;(_n_)**. However, even some algorithms in this form may not be solvable through the Master Method. For example, **T(_n_) = 2T(_n_/2) + _n_/Log _n_**.
 
@@ -299,7 +265,6 @@ procedure p( input x of size n):
     Call procedure p recursively on each subproblem
     Combine the results from the subproblems
 ```
-
 
 1. First, find the **_critical exponent_ _c_<sub>crit</sub>**
 
@@ -316,8 +281,7 @@ procedure p( input x of size n):
 | 2   | **&fnof;(_n_) = &Theta;(_n_<sup>_c_<sub>crit</sub></sup> log<sup>_k_</sup>_n_)** for any **k &ge; 0** | **T(_n_) = &Theta;(_n_<sup>_c_<sub>crit</sub></sup> log<sup>_k_ + 1</sup>_n_)** |
 | 3   | **&fnof;(_n_) = &Omega;(_n_<sup>c</sup>)** where **_c_ > _c_<sub>crit</sub>** | **T(_n_) = &Theta;(&fnof;(_n_))** |
 
-
-###### Case 1 (Leaf heavy)
+##### Case 1 (Leaf heavy)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T(_n_) = 16T(_n_/2) + 10 _n_<sup>2</sup>
 
@@ -327,7 +291,7 @@ procedure p( input x of size n):
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T(n) = &Theta;(_n_<sup>_c_<sub>crit</sub></sup>) = &Theta;(_n_<sup>4</sup>)
 
-###### Case 2 (Split/Recombine &asymp; subproblems)
+##### Case 2 (Split/Recombine &asymp; subproblems)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T(_n_) = 4T(_n_/4) + 10 _n_
 
@@ -337,7 +301,7 @@ procedure p( input x of size n):
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T(n) = &Theta;(_n_<sup>_c_<sub>crit</sub></sup> log<sup>_k_ + 1</sup>_n_) = &Theta;(_n_ log(_n_))
 
-###### Case 3 (Root Heavy)
+##### Case 3 (Root Heavy)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T(_n_) = 2T(_n_/2) + _n_<sup>2</sup>
 
@@ -347,9 +311,7 @@ procedure p( input x of size n):
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; T(n) = &Theta;(&fnof;(_n_)) = &Theta;(_n_<sup>2</sup>)
 
----
-
-#### <a name="considerations"></a> Considerations
+## <a name="considerations"></a> Considerations
 
 Remember that with Big O it doesn’t matter when the curves cross, so long as they do, and that after that the curve of &fnof;(_n_) is always less than or equal to the Big O curve _g_(_n_). We’re talking about scalability. We are interested in how things operate as they grow very large. If your input size will never reach **n<sub>0</sub>**, an algorithm that runs in an asymptotically slower manner could actually be a better choice. 
 
@@ -358,4 +320,3 @@ It is not always possible to make a Big Theta statement about an algorithm. But 
 Remember that although constants and coefficients have little bearing on asymptotic statements, they may actually come in handy if you are concerned with how and when the functions diverge. If that’s the case, then just as larger exponents grow faster than smaller ones, so logs with lesser bases grow more quickly than those with greater ones.
 
 It’s helpful to remember that Big O isn’t the only consideration to be factored into the algorithm development process. It may be tempting to use Big O prematurely or prioritize it too highly in a way that will overshadow other equally important considerations such as “how easy is this code to work with and maintain?”
-
