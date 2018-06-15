@@ -7,8 +7,6 @@
   * [Calculating Bounds](#calculating)
   * [Considerations](#considerations)
 
-Programmers should always strive to have modular, secure, maintable, and performant code. This section covers analyzing the performance of algorithms.
-
 ## How do we decide which algorithm performs better for a given problem?
 
 A naive approach would be to time both algorithms. However there are many issues with this approach:
