@@ -38,3 +38,4 @@ class Graph:
         self._adj[v_of_edge]
         if not self._directed and u_of_edge != v_of_edge:
             self._adj[v_of_edge].append(u_of_edge)
+            

@@ -236,3 +236,4 @@ class TestStack(unittest.TestCase):
 
     def test_delete_missing_vertex_multidigraph(self):
         self.assertRaises(KeyError, self.multidigraph.__delitem__, 8)
+        
