@@ -1,4 +1,4 @@
-from data_structures.priority_queue.binary_heap import BinaryHeap
+from data_structures.heap.binary_heap import BinaryHeap
 
 
 class MinBinaryHeap(BinaryHeap):

@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.priority_queue.min_binary_heap import MinBinaryHeap
+from data_structures.heap.min_binary_heap import MinBinaryHeap
 
 
 class TestStack(unittest.TestCase):
