@@ -2,6 +2,7 @@
 
 * [Stacks and Queues](stack_queue)
 * [Priority Queues](priority_queue)
+* [Graph](graph)
 
 Data structures fall under two broad categories _contiguous_ and _linked_:
 

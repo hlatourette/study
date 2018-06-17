@@ -1,9 +1,8 @@
 # Heap
 
-A heap allows you to retrieve items by priority (using comparators this can be defined however you want) rather than insertion order (FIFO/LIFO) or key match (dictionary). There are multiple ways this structure can be implemented:
-
 * [Binary Heap](#binary_heap)
-* [Binary Search Tree]
+
+A heap allows you to retrieve items by priority (using comparators this can be defined however you want) rather than insertion order (FIFO/LIFO) or key match (dictionary). There are multiple ways this structure can be implemented:
 
 ## <a name="heap"></a> Binary Heap
 
