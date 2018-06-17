@@ -1,13 +1,13 @@
-# Priority Queues
+# Heap
 
-A priority queue allows you to retrieve items by priority (using comparators this can be defined however you want) rather than insertion order (FIFO/LIFO) or key match (dictionary). There are multiple ways this structure can be implemented:
+A heap allows you to retrieve items by priority (using comparators this can be defined however you want) rather than insertion order (FIFO/LIFO) or key match (dictionary). There are multiple ways this structure can be implemented:
 
 * [Binary Heap](#binary_heap)
 * [Binary Search Tree]
 
 ## <a name="heap"></a> Binary Heap
 
-Similar to a tree (but can easily be implemented in an array or array-list), a heap is a data structure that maintains the property that the root is always the minimum element. This property holds true for all subtrees of the parent tree. As a result, the item with 'priority' will always be at the top. 
+Similar to a tree (but can easily be implemented in an array or array-list), a heap is a data structure that maintains the property that the root is always the minimum element. This property holds true for all subtrees of the parent tree. As a result, the item with 'priority' will always be at the top.
 
 * push(value): Add an item to the end of the heap and bubble based on the heap rules (minimum element at front, etc.)
 

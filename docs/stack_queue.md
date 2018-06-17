@@ -1,4 +1,4 @@
-# Stacks and Queues
+# Stack and Queue
 
 * [Stack](#stack)
 * [Queue](#queue)
