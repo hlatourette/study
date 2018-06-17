@@ -3,6 +3,7 @@
 * [Analysis](analysis)
 * [Sorting](sorting)
 * [Searching](searching)
+* [Graph](graph_search)
 
 Definitionally algorithms are a process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer. There are three components to any useful algorithm:
 
