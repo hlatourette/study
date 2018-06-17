@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.priority_queue.max_binary_heap import MaxBinaryHeap
+from data_structures.heap.max_binary_heap import MaxBinaryHeap
 
 
 class TestStack(unittest.TestCase):
