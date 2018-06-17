@@ -6,5 +6,5 @@
   * [Searching](searching)
 
 * **[Data Structures](data_structures)**
-  * [Stacks and Queues](stack_queue)
-  * [Priority Queues](priority_queue)
+  * [Stack and Queue](stack_queue)
+  * [Heap](heap)
