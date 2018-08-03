@@ -1,10 +1,3 @@
-TODO:
-    - remove sections as they are completed
-    - figure out how to install mathjax and update equations, etc.
-
-https://github.com/yangshun/tech-interview-handbook
- https://github.com/yangshun/lago
-
 Fundamentals (https://www.tug.org/texshowcase/cheat.pdf)
     Numeral Systems (binary, decimal, hex)
         https://www.rapidtables.com/math/number/Numeral_system.html
@@ -34,13 +27,6 @@ Fundamentals (https://www.tug.org/texshowcase/cheat.pdf)
         see chapter in nn book
 
     Linear Algebra
-
-Algorithms
-    http://mimoza.marmara.edu.tr/~msakalli/cse706_12/SkienaTheAlgorithmDesignManual.pdf
-
-    Machine Learning
-
-Data Structures
    
 
 syntax: /repos/:user/:repo [GET]
