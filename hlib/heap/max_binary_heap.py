@@ -1,4 +1,4 @@
-from data_structures.heap.binary_heap import BinaryHeap
+from heap.binary_heap import BinaryHeap
 
 
 class MaxBinaryHeap(BinaryHeap):
