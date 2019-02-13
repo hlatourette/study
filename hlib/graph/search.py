@@ -20,7 +20,7 @@ def bfs(graph, vertex, func, neighbor_sort_key=lambda val: val):
     while len(queue) > 0:
         v = queue.popleft()
         func(v)
-        for neighbor in sorted(graph[v]):
+        for neighbor in sorted(graph[v], key=neighbor_sort_key):
             if neighbor not in visited:
                 visited.add(neighbor)
                 queue.append(neighbor)
