@@ -1,8 +1,8 @@
 import unittest
 from functools import partial
 
-from algorithms.graph.search import dfs, bfs
-from data_structures.graph.graph import Graph
+from graph.search import dfs, bfs
+from graph.graph import Graph
 
 
 class TestStack(unittest.TestCase):

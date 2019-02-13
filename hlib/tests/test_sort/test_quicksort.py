@@ -1,6 +1,6 @@
 import unittest
 
-from algorithms.sorting.quicksort import quicksort
+from sort.quicksort import quicksort
 
 
 class TestStack(unittest.TestCase):
