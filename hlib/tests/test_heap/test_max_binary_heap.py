@@ -5,7 +5,7 @@ from heap.max_binary_heap import MaxBinaryHeap
 
 class TestStack(unittest.TestCase):
     def setUp(self): 
-        self.heap = MaxBinaryHeap()
+        self.heap = MaxBinaryHeap[int]()
 
     def test_push(self):
         self.heap.push(0)

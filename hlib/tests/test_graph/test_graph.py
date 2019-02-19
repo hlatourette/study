@@ -34,9 +34,9 @@ class TestStack(unittest.TestCase):
             5: {7:{self.attr_key: 0.1}},
             6: {6:{self.attr_key: 9.7}}
         }
-        self.graph = Graph(graph_adj_list, directed=False)
-        self.digraph = Graph(digraph_adj_list, directed=True)
-        self.graph_attr = Graph(graph_adj_list_attr, directed=False)
+        self.graph = Graph[int](graph_adj_list, directed=False)
+        self.digraph = Graph[int](digraph_adj_list, directed=True)
+        self.graph_attr = Graph[int](graph_adj_list_attr, directed=False)
 
     def test_construct_graph(self):
         self.assertEqual(self.graph[0], {1: {}, 2: {}, 3: {}})
@@ -122,9 +122,9 @@ class TestStack(unittest.TestCase):
 
     def test_add_edges_graph(self):
         self.graph.add_edges(adj_list={
-            0: {4: {}},
+            0: {4: {}, 6: {}},
             2: {3: {}}})
-        self.assertEqual(self.graph[0], {1:{}, 2:{}, 3:{}, 4:{}})
+        self.assertEqual(self.graph[0], {1:{}, 2:{}, 3:{}, 4:{}, 6:{}})
         self.assertEqual(self.graph[2], {0:{}, 3:{}, 5:{}})
         self.assertEqual(self.graph[3], {0:{}, 2:{}, 6:{}})
         self.assertEqual(self.graph[4], {0:{}, 1:{}, 6:{}})

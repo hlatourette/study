@@ -13,7 +13,7 @@ class TestStack(unittest.TestCase):
             path.append(node)
 
         self.func = partial(f, self.path)
-        
+
         graph_adj_list = {
             0: {1:{}, 2:{}, 3:{}},
             1: {4:{}, 5:{}},
@@ -33,8 +33,9 @@ class TestStack(unittest.TestCase):
             6: {},
             7: {7:{}}
         }
-        self.graph = Graph(graph_adj_list, directed=False)
-        self.digraph = Graph(digraph_adj_list, directed=True)
+        
+        self.graph = Graph[int](graph_adj_list, directed=False)
+        self.digraph = Graph[int](digraph_adj_list, directed=True)
 
     def test_dfs_graph(self):
         dfs(self.graph, 0, self.func)

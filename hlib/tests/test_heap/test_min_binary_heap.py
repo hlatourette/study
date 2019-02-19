@@ -5,7 +5,7 @@ from heap.min_binary_heap import MinBinaryHeap
 
 class TestStack(unittest.TestCase):
     def setUp(self): 
-        self.heap = MinBinaryHeap()
+        self.heap = MinBinaryHeap[int]()
 
     def test_push(self):
         self.heap.push(0)
