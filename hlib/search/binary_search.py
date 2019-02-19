@@ -1,4 +1,9 @@
-def binary_search(arr, target, comp=lambda x, y: x < y):
+from typing import Callable, Sequence, TypeVar
+
+
+T = TypeVar('T')
+
+def binary_search(arr: Sequence[T], target: T, comp: Callable[[T, T], bool]=lambda x, y: x < y) -> int:
     start = 0
     end = len(arr) - 1
     while start <= end:

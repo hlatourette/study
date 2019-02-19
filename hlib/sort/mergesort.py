@@ -1,7 +1,12 @@
-def mergesort(arr, comp=lambda x, y: x < y):
+from typing import Callable, Sequence, TypeVar
+
+
+T = TypeVar('T')
+
+def mergesort(arr: Sequence[T], comp: Callable[[T, T], bool]=lambda x, y: x < y):
     return _mergesort(arr, comp)
 
-def _mergesort(arr, comp):
+def _mergesort(arr: Sequence[T], comp: Callable[[T, T], bool]):
     if len(arr) <= 1:
         return arr
 
@@ -11,7 +16,7 @@ def _mergesort(arr, comp):
 
     return _merge(left, right, comp)
 
-def _merge(left, right, comp):
+def _merge(left: int, right: int, comp: Callable[[T, T], bool]):
     merge = []
     i = 0
     j = 0
