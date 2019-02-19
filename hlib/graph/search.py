@@ -6,11 +6,11 @@ from graph.graph import Graph
 
 T = TypeVar('T')
 
-def dfs(graph: Graph, vertex: T, func: Callable[[Graph], Any], sort_key: Callable[[T], T]=lambda val: val) -> None:
+def dfs(graph: Graph, vertex: T, func: Callable[[Graph], Any], sort_key: Callable[[T], T]=lambda val: val):
     visited = set()
     _dfs(graph, vertex, visited, func, sort_key)
 
-def _dfs(graph: Graph, vertex: T, visited: Set, func: Callable[[Graph], None], sort_key):
+def _dfs(graph: Graph, vertex: T, visited: Set, func: Callable[[Graph], None], sort_key: Callable[[T], T]=lambda val: val):
     func(vertex)
     visited.add(vertex)
     for neighbor in sorted(graph[vertex], key=sort_key):
@@ -18,7 +18,7 @@ def _dfs(graph: Graph, vertex: T, visited: Set, func: Callable[[Graph], None], s
             _dfs(graph, neighbor, visited, func, sort_key)
 
 
-def bfs(graph: Graph, vertex: T, func: Callable[[Graph], Any], sort_key: Callable[[T], T]=lambda val: val) -> None:
+def bfs(graph: Graph, vertex: T, func: Callable[[Graph], Any], sort_key: Callable[[T], T]=lambda val: val):
     queue = deque()
     queue.append(vertex)
     visited = set()
