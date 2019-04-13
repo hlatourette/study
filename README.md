@@ -1,3 +1,3 @@
 # pyprep
 
-https://hlatourette.github.io/pyprep/
+supplemental algorithms and data structures
