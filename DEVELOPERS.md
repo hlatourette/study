@@ -2,6 +2,7 @@
 
 * [Setup](#setup)
 * [Test](#test)
+* [Deploy](#deploy)
 * [Style](#style)
 * [Source Control](#source_control)
 
@@ -34,6 +35,14 @@ pip3 install -r requirements.txt
 
 ```
 cd hlib && python3 -m unittest discover -v
+```
+
+
+## Deploy
+
+```
+python setup.py sdist bdist_wheel
+python3 -m twine upload dist/*
 ```
 
 ## <a name="style"></a> Style
