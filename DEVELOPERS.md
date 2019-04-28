@@ -24,9 +24,9 @@ git clone git@github.com:hlatourette/hlib.git
 
 ```
 cd <repo>
-python3 -m venv env
+python -m venv env
 source ./env/bin/activate
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## <a name="test"> Test
@@ -42,7 +42,7 @@ cd hlib && python3 -m unittest discover -v
 
 ```
 python setup.py sdist bdist_wheel
-python3 -m twine upload dist/*
+python -m twine upload dist/*
 ```
 
 ## <a name="style"></a> Style
