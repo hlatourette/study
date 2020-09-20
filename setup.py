@@ -6,10 +6,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="hlib",
-    version="0.0.2",
+    version="0.1.0",
     author="Hunter LaTourette",
     author_email="hlatourette@gmail.com",
-    description="supplemental algorithms and data structures",
+    description="simple graph library",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/hlatourette/hlib",
