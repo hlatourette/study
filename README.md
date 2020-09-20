@@ -13,10 +13,3 @@ TBD...
 ```
 docker build -t hlib .
 ```
-
-## Publish
-
-```
-python setup.py sdist bdist_wheel
-python -m twine upload dist/*
-```
