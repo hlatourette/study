@@ -1,7 +1,7 @@
 import unittest
 from functools import partial
 
-from graph.search import dfs, bfs
+from graph_algorithms.search import dfs, bfs
 from graph.graph import Graph
 
 
